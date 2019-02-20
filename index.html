@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-    <htmL>
+    <html>
         <head>
             <title>Modern Movements Feedback Form</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+          <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         
         </head>
         <body>
             <h1 id="title">Providence Movement Festival 2019 Survey</h1>
-            <p id="description"></p>
+            <p id="description">Please tell us about your experience at the festival this year.</p>
             <div class="container">
             <form id="survey-form">
                 <h4 id="name-input">Enter name below:</h4>
-                <input type="text" id="name" placeholder="Enter name">
-                <h4 id="email-input">Enter email below:</h4>
-                <input type="email" id="email" placeholder="Enter email">
-                <h4 id="number-input">How many performances did you attend this year?</h4>
-                <input type="number" id="number" min="0" max="10">
+                <input type="text" id="name" placeholder="Enter name" required>
+                <h4 id="email-input" >Enter email below:</h4>
+                <input type="email" id="email" placeholder="Enter email" required>
+   <h4 id="number-input" >How many performances did you attend this year?</h4>
+                <input type="number" id="number" min="0" max="10" placeholder="Please enter a number.">
                 <h4>Please select which best describes you:</h4>
                 <select id="dropdown">
                     <option value="select">-Select-</option>
@@ -28,86 +29,86 @@
                 <div>
                 <h4 group="feedback">What did you think of the festival?</h4>
                 <label>
-                <input type="radio" name="feedback" />
+                <input type="radio" value="5" name="feedback" />
                 <span >Loved it!</span>
                 </label>
                 <label>
-                <input type="radio" name="feedback"/>
+                <input type="radio" value="4" name="feedback"/>
                 <span>Liked it!</span>
                 </label>
                 <label>
-                <input type="radio" name="feedback"/>
+                <input type="radio" value="3" name="feedback"/>
                 <span>Meh!</span>
                 </label>
                 <label>
-                <input type="radio" name="feedback"/>
+                <input type="radio" value="2" name="feedback"/>
                 <span>Didn't love it!</span>
                 </label>
                 <label>
-                <input type="radio" name="feedback"/>
+                <input type="radio" value="1" name="feedback"/>
                 <span>Didn't even like it.</span>
                 </label>
                 </div>
                 <h4>Please select your favorite event.</h4>
                     <p>
                       <label>
-                        <input type="checkbox" />
+                        <input type="checkbox" value="BillEvans_most"/>
                         <span>Bill Evans 22</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input type="checkbox" />
+                  <input type="checkbox" value="MB1_most"/>
                         <span>Mixed Bill (Friday)</span>
                       </label>
                     </p> 
                     <p>
                       <label>
-                        <input type="checkbox" />
+                  <input type="checkbox" value="MB2_most"/>
                         <span>Mixed Bill (Saturday)</span>
                       </label>
                     </p> 
                     <p>
                       <label>
-                        <input type="checkbox" />
+                   <input type="checkbox" value="DWIP_most"/>
                         <span>Dance Works in Progress</span>
                       </label>
                     </p> 
                     <p>
                       <label>
-                        <input type="checkbox" />
+                   <input type="checkbox" value="undecided"/>
                         <span>I can't decide.</span>
                       </label>
                     </p> 
               
-                <h4>Please select your least favorite event</h4>
+           <h4>Please select your least favorite event.</h4>
                  <p>
                       <label>
-                        <input type="checkbox" />
+              <input t="checkbox" value="BillEvans_least"/>
                         <span>Bill Evans 22</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input type="checkbox" />
+                    <input type="checkbox" value="MB1_least"/>
                         <span>Mixed Bill (Friday)</span>
                       </label>
                     </p> 
                     <p>
                       <label>
-                        <input type="checkbox" />
+                    <input type="checkbox" value="MB2_least"/>
                         <span>Mixed Bill (Saturday)</span>
                       </label>
                     </p> 
                     <p>
                       <label>
-                        <input type="checkbox" />
+                   <input type="checkbox" value="DWIP_least" />
                         <span>Dance Works in Progress</span>
                       </label>
                     </p> 
                     <p>
                       <label>
-                        <input type="checkbox" />
+                  <input type="checkbox" value="unknown" />
                         <span>I can't decide</span>
                       </label>
                     </p> 
@@ -123,4 +124,4 @@
             </div>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
         </body>
-    </htmL>
+    </html>
