@@ -7,8 +7,9 @@
         
         </head>
         <body>
-            <h1 id="title">Modern Movements Dance Festival Survey</h1>
+            <h1 id="title">Providence Movement Festival 2019 Survey</h1>
             <p id="description"></p>
+            <div class="container">
             <form id="survey-form">
                 <h4 id="name-input">Enter name below:</h4>
                 <input type="text" id="name" placeholder="Enter name">
@@ -26,33 +27,100 @@
                 </select>
                 <div>
                 <h4 group="feedback">What did you think of the festival?</h4>
-                <input type="radio">Loved it!<br>
-                <input type="radio">Liked it!<br>
-                <input type="radio">Meh!<br>
-                <input type="radio">Didn't love it!<br>
-                <input type="radio">Didn't even like it.
+                <label>
+                <input type="radio" name="feedback" />
+                <span >Loved it!</span>
+                </label>
+                <label>
+                <input type="radio" name="feedback"/>
+                <span>Liked it!</span>
+                </label>
+                <label>
+                <input type="radio" name="feedback"/>
+                <span>Meh!</span>
+                </label>
+                <label>
+                <input type="radio" name="feedback"/>
+                <span>Didn't love it!</span>
+                </label>
+                <label>
+                <input type="radio" name="feedback"/>
+                <span>Didn't even like it.</span>
+                </label>
                 </div>
                 <h4>Please select your favorite event.</h4>
-                <input type="checkbox" id="Bill Evans1"><label for="Bill Evans1">Bill Evans 22</label>
-                <input type="checkbox" id="MB11"><label for="MB11">Mixed Bill (Friday)</label>
-                <input type="checkbox" id="MB21"><label for="MB21">Mixed Bill (Saturday)</label>
-                <input type="checkbox" id="DWIP1"><label for="DWIP1">Dance Works in Progress</label>
-                <input type="checkbox" id="NA1"><label for="NA1">I can't decide.</label>
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Bill Evans 22</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Mixed Bill (Friday)</span>
+                      </label>
+                    </p> 
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Mixed Bill (Saturday)</span>
+                      </label>
+                    </p> 
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Dance Works in Progress</span>
+                      </label>
+                    </p> 
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>I can't decide.</span>
+                      </label>
+                    </p> 
+              
                 <h4>Please select your least favorite event</h4>
-                <input type="checkbox" value="Bill Evans2"><label for="Bill Evans2">Bill Evans 22</label>
-                <input type="checkbox" value="MB12"><label for="MB12">Mixed Bill (Friday)</label>
-                <input type="checkbox" value="MB22"><label for="MB22">Mixed Bill (Saturday)</label>
-                <input type="checkbox" value="DWIP2"><label for="DWIP2">Dance Works in Progress</label>
-                <input type="checkbox" value="NA2"><label for="NA2">I can't decide.</label>
+                 <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Bill Evans 22</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Mixed Bill (Friday)</span>
+                      </label>
+                    </p> 
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Mixed Bill (Saturday)</span>
+                      </label>
+                    </p> 
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Dance Works in Progress</span>
+                      </label>
+                    </p> 
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>I can't decide</span>
+                      </label>
+                    </p> 
                 <div>
                  <h4>Please provide any additional comments below:</h4>
                 <textarea class="materialize-textarea" id="comments"/></textarea>
                 </div>
                 <div>
                 <br>    
-                <button class="btn waves-effect btn-large" type="submit">Submit<i class="material-icons right">send</i></button>
+                <button class="btn waves-effect btn-large" type="submit" id="submit">Submit<i class="material-icons right">send</i></button>
                 </div>
             </form>
+            </div>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
         </body>
     </htmL>
