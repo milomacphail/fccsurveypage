@@ -1,3 +1,11 @@
 #survey-form {
     margin: auto;
 }
+
+#title {
+  text-align: center;
+}
+
+#description {
+    margin-left: 3.4em;
+}
